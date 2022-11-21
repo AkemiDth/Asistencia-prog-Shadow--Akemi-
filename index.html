@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Asistencia Programación</title>
+ </head>
+ <body>
+  <!--navegacion (NAVIGATION)-->
+  <nav class="navbar navbar-dark bg-dark" id="232">
+   <div class="container">
+    <a href="#" class="navbar-brand">Gestion de asistencia (SHADOW & AKEMI)</a>
+   </div>
+  </nav>
+  <!--main (cont principal)-->
+  <div class="container">
+   <div class="row pt-3">
+    <div class="col-md-4">
+     <div class="card">
+      <div class="card-body">
+       <form id="makebudget">
+        <div class="row pt-2">
+         <div class="form-group">
+          <input
+           required
+           class="form-control"
+           type="text"
+           id="namebud"
+           placeholder="Nombre del estudiante"
+          />
+         </div>
+        </div>
+        <!--bud name-->
+
+        
+      
+        <!--init bud-->
+        <div class="row pt-2">
+         <div class="form-group">
+          <h6>Nota del dia</h6>
+          <div class="form-group">
+            <input
+             id="initbud"
+             class="form-control"
+             type="number"
+             min="0"
+             max="100"
+             required
+             placeholder="escoja nota entre 0-100"
+            />
+           </div>
+         </div>
+        </div>
+        <!--type mon-->
+        <div class="row pt-2">
+          <div class="form-group">
+           <h6>tipo de asistencia</h6>
+           <select class="form-select" id="monuse">
+            <option value="(Presente)">Presente a tiempo</option>
+            <option value="(Retardo)">Asistencia con retardo</option>
+            <option value="(No asistio)">Sin asistencia</option>
+           </select>
+          </div>
+         </div>
+          <!--desc bud-->
+         <div class="row pt-2">
+          <div class="form-group">
+           <textarea
+            id="description"
+            cols="8"
+            rows="5"
+            placeholder="Desempeño del estudiante"
+            class="form-control"
+           ></textarea>
+          </div>
+         </div>
+        <!--desc bud-->
+  
+        <div class="row pt-2">
+         <div class="form-group">
+          <h6>Dia de la asistencia</h6>
+          <input class="form-control" type="date" id="date" />
+         </div>
+        </div>
+        <div class="row pt-2">
+         <!--save-->
+         <div class="form-group">
+          <button type="submit" class="btn btn-block btn-primary">Guardar Asistencia</button>
+         </div>
+        </div>
+        <!--save bud-->
+        <!--end form-->
+       </form>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-8">
+     <div id="tasks"></div>
+    </div>
+   </div>
+  </div>
+  <!--script used-->
+  <script src="java.js"></script>
+ </body>
+</html>
